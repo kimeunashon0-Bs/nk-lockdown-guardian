@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { MessageCircle, ShieldCheck } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 
-const WHATSAPP_NUMBER = "254700000000";
+const WHATSAPP_NUMBER = "254799528426";
 const WHATSAPP_MSG = encodeURIComponent("Hello, I'm interested in your security services.");
 
 export default function Hero() {
@@ -18,7 +18,7 @@ export default function Hero() {
         className="absolute inset-0 w-full h-full object-cover"
         loading="eager"
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/60 to-background" />
+      <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-background/50 to-background/90" />
 
       {/* Glass card — kept dark for contrast over the dark hero image */}
       <div className="relative z-10 glass-dark p-8 md:p-14 max-w-2xl mx-4 text-center">

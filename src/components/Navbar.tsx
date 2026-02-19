@@ -12,7 +12,7 @@ const navLinks = [
   { label: "Contact", href: "#contact" },
 ];
 
-const WHATSAPP_NUMBER = "254700000000";
+const WHATSAPP_NUMBER = "254799528426";
 const WHATSAPP_MSG = encodeURIComponent("Hello, I'm interested in your security services.");
 
 export default function Navbar() {
