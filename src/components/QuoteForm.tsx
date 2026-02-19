@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/select";
 import { Send } from "lucide-react";
 
-const WHATSAPP_NUMBER = "254700000000";
+const WHATSAPP_NUMBER = "254799528426";
 
 export default function QuoteForm() {
   const [form, setForm] = useState({
@@ -40,7 +40,7 @@ export default function QuoteForm() {
   };
 
   return (
-    <section id="quote" className="py-20 md:py-28">
+    <section id="quote" className="py-16 md:py-20">
       <div className="container mx-auto px-4 max-w-2xl">
         <div className="text-center mb-10">
           <p className="text-primary font-heading text-sm font-semibold tracking-widest uppercase mb-2">

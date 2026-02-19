@@ -7,7 +7,7 @@ const areas = [
 
 export default function AreasServed() {
   return (
-    <section id="areas" className="py-20 md:py-28">
+    <section id="areas" className="py-16 md:py-20">
       <div className="container mx-auto px-4 text-center">
         <p className="text-primary font-heading text-sm font-semibold tracking-widest uppercase mb-2">
           Coverage
