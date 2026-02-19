@@ -12,7 +12,7 @@ export default function FloatingWhatsApp() {
       className="fixed bottom-6 right-6 z-50 h-14 w-14 rounded-full bg-green-500 flex items-center justify-center shadow-lg animate-pulse-glow hover:scale-110 transition-transform"
       aria-label="Chat on WhatsApp"
     >
-      <MessageCircle className="h-7 w-7 text-background" />
+      <MessageCircle className="h-7 w-7 text-primary-foreground" />
     </a>
   );
 }
