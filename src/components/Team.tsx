@@ -30,7 +30,7 @@ export default function Team() {
         <div className="grid md:grid-cols-2 gap-8 max-w-3xl mx-auto">
           {team.map((t) => (
             <div key={t.name} className="glass-card glass-card-hover p-8 text-center">
-              <div className="h-28 w-28 rounded-full overflow-hidden mx-auto mb-4 border-2 border-primary/30">
+              <div className="h-40 w-40 rounded-full overflow-hidden mx-auto mb-4 border-2 border-primary/30">
                 <img src={t.image} alt={t.name} className="h-full w-full object-cover object-top" />
               </div>
               <h3 className="font-heading font-bold text-foreground text-lg">{t.name}</h3>
