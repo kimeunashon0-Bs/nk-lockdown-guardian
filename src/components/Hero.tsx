@@ -29,13 +29,13 @@ export default function Hero() {
           </span>
         </div>
 
-        <h1 className="section-heading text-primary-foreground mb-2">
+        <h1 className="section-heading text-white mb-2">
           NK Security Solutions Ltd
         </h1>
         <p className="text-2xl md:text-3xl font-heading font-bold text-primary text-glow mb-4">
           Lock It Down.
         </p>
-        <p className="text-primary-foreground/70 mb-8 max-w-lg mx-auto">
+        <p className="text-white/80 mb-8 max-w-lg mx-auto">
           Professional CCTV, Electric Fence &amp; Alarm Installation in Nairobi
           &amp; Surrounding Areas.
         </p>
