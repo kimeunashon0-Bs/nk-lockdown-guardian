@@ -1,22 +1,6 @@
 import { useState, useEffect } from "react";
-import { Menu, X, MessageCircle, Sun, Moon } from "lucide-react";
+import { Menu, X, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
-
-function useTheme() {
-  const [dark, setDark] = useState(() => {
-    if (typeof window !== "undefined") {
-      return localStorage.getItem("theme") === "dark";
-    }
-    return false;
-  });
-
-  useEffect(() => {
-    document.documentElement.classList.toggle("dark", dark);
-    localStorage.setItem("theme", dark ? "dark" : "light");
-  }, [dark]);
-
-  return { dark, toggle: () => setDark((d) => !d) };
-}
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -34,7 +18,6 @@ const WHATSAPP_MSG = encodeURIComponent("Hello, I'm interested in your security 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
-  const { dark, toggle } = useTheme();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -64,9 +47,6 @@ export default function Navbar() {
               {l.label}
             </a>
           ))}
-          <button onClick={toggle} className="p-2 rounded-full hover:bg-muted transition-colors text-foreground">
-            {dark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
-          </button>
           <a
             href={`https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MSG}`}
             target="_blank"
@@ -97,10 +77,6 @@ export default function Navbar() {
               {l.label}
             </a>
           ))}
-          <button onClick={toggle} className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors">
-            {dark ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
-            {dark ? "Light Mode" : "Dark Mode"}
-          </button>
           <a
             href={`https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MSG}`}
             target="_blank"
